@@ -11,15 +11,16 @@
 <main>
 
 <h1>SpinTracker Privacy Policy</h1>
-<p class="effective">Effective date: 29 July 2026</p>
+<p class="effective">Effective date: 23 September 2026</p>
 
 <div class="lede">
 <h2>The short version</h2>
 <p>SpinTracker records your ride on your device and keeps it there. Your workouts, music history, and profile are not uploaded to any server we operate — we do not operate one.</p>
-<p>Two things do leave your device, and you should know about both:</p>
+<p>Three things do leave your device, and you should know about each:</p>
 <ul>
 <li><strong>While a ride is recording, the app listens for music.</strong> It turns what it hears into an acoustic fingerprint and sends that to Apple's music recognition service to identify the song. No audio recording is ever saved or transmitted.</li>
-<li><strong>Anything you explicitly share</strong> — a playlist you create, a workout you send to Strava or Garmin, a card you post — goes to that service when you ask it to.</li>
+<li><strong>When the app shows a song, it loads the cover art from Apple.</strong> Like any image loaded from the internet, the request reveals to Apple which cover is being shown, and your device's IP address; it carries nothing else about your ride.</li>
+<li><strong>Anything you explicitly ask for</strong> — a playlist you create or check a class against, a card you post, a file you export, a feedback email you send us — leaves only to do what you asked, and only when you ask it to.</li>
 </ul>
 <p>We do not track you, we do not use analytics or advertising SDKs, and we do not sell or rent your data to anyone.</p>
 </div>
@@ -34,39 +35,39 @@
 <li><strong>The location where a ride started</strong>, if you granted location access — stored as coordinates on that session so your share cards can be tagged with the right studio</li>
 <li><strong>Selfies</strong> you attach to a ride, stored in the app's private storage</li>
 <li><strong>Paired Bluetooth sensors</strong> and your app preferences</li>
+<li><strong>Share counts</strong> — how many times you've shared a ride or a recap, from where in the app and roughly where to, used only to fill in the usage summary of a feedback email you choose to send</li>
 </ul>
 <p>Deleting the app removes all of it.</p>
-
 <h2>What leaves your device, and when</h2>
-
 <h3>Song identification — during every ride</h3>
 <p>This is the one transmission that is not per-event opt-in, so it deserves to be stated plainly. While a session is recording, SpinTracker uses the microphone to listen for music. Audio is converted on device into an acoustic signature — a mathematical fingerprint — which is sent to Apple's ShazamKit service to identify the track.</p>
 <ul>
 <li>The raw audio is never written to disk and never transmitted</li>
-<li>Only the fingerprint is sent, and only while a ride is actively recording</li>
+<li>For identification, only the fingerprint is sent, and only while a ride is actively recording</li>
 <li>Apple's handling of that request is governed by Apple's privacy policy</li>
 <li>You can prevent it entirely by denying microphone access; the rest of the app continues to work, and your ride still records heart rate and cadence</li>
 </ul>
-
 <h3>Apple Health — only with your permission</h3>
-<p>If you grant access, SpinTracker reads your date of birth, resting heart rate, weight, and height to personalise effort zones, and writes completed workouts back to Health. Health data is governed by Apple's protections and never leaves your device through us. You can revoke access at any time in the Health app, and you can turn off automatic workout syncing in Session Settings.</p>
-
-<h3>Music services — only when you create a playlist</h3>
-<p>Creating a playlist sends your ride's track list to the service you chose: Apple Music, Spotify, or Deezer. Connecting an account stores an access token in your device's Keychain. Each service's own privacy policy governs what it does with that data. You can disconnect at any time.</p>
-
-<h3>Strava and Garmin — only when you export</h3>
-<p>Exporting a workout uploads that activity, including its music track list, to the service you chose. Their privacy policies apply to the uploaded copy.</p>
-
+<p>If you grant access, SpinTracker reads your date of birth, resting heart rate, weight, and height to personalise effort zones; the heart rate another device, such as an Apple Watch, saved to Health during a ride, to fill in heart rate your ride is missing; and your workouts, to see whether another app has already recorded a class. It writes completed workouts back to Health. When another app has already recorded a class — your Apple Watch, say — SpinTracker adds your cadence and power to Health, where your bike provided them, and your heart rate for any part of the class that app did not record, without a second workout. It then clears up after itself: a workout of its own that would have duplicated the class, and its own readings for any part the other app turns out to have recorded after all. SpinTracker only ever removes data it wrote itself, and it never deletes anything another app wrote. Health data is governed by Apple's protections and never leaves your device through us, with one exception you control: the usage summary in a feedback email you choose to send us includes counts drawn from it (how many rides had heart rate, how many of those came from Apple Health, and whether Apple Health workout sync is on), never the readings themselves. You can revoke access at any time in the Health app, and you can turn off automatic workout syncing in Session Settings.</p>
+<h3>Album art — whenever the app shows a song</h3>
+<p>Wherever SpinTracker shows a song — the ride screen while a song plays, your tracklists and song library, and the share cards — it loads that song's cover art from Apple's servers when it appears. As with any image loaded from the internet, the request reveals which cover is being shown and your device's IP address. It carries nothing else about your ride, and Apple's privacy policy governs it.</p>
+<h3>Apple Music — only when you create a playlist or check a class against one</h3>
+<p>Creating a playlist sends your ride's track list to your own Apple Music library.</p>
+<p>Checking a class you taught against the Apple Music playlist you pasted on it reads that playlist's tracks from Apple Music, and asks Apple's ShazamKit service which catalogue entry each song on that ride was identified as, sending the song identifiers already stored on the ride and no audio. Nothing is written to your tracklist unless you confirm it.</p>
+<p>Apple's privacy policy governs both requests.</p>
+<h3>Exported files — only when you export one</h3>
+<p>A CSV or TCX export writes a file of your ride's readings, and a TCX also carries its music track list. SpinTracker hands that file to the iOS share sheet and sends it nowhere itself; where it goes next is entirely your choice, and whatever you send it to is governed by that service's own policy.</p>
 <h3>Shared setlist links</h3>
-<p>When you share a ride, SpinTracker creates a link containing that ride's setlist — song titles and artists, and the studio and instructor if you tagged them. If you choose to include your metrics, those travel in the link too.</p>
+<p>When you share a ride, SpinTracker creates a link containing that ride's setlist — song titles and artists, and the studio, instructor and class name if you added them. If the instructor or the studio has a booking link, or you saved a playlist link for the class, those travel in the link too, as do your metrics if you choose to include them.</p>
 <p>The information is encoded <strong>inside the link itself</strong>. It is not uploaded to us or stored on any server, and the part of the link carrying it is never transmitted to the site that displays it. Anyone who has the link can read what it contains, so share it only with people you intend to see it. Because nothing is stored, a link cannot be recalled once shared.</p>
-
 <h3>Social platforms — only when you post</h3>
 <p>Posting a workout card sends that image and caption to the platform you selected. Nothing is posted without you initiating it.</p>
-
 <h3>Photos — only when you save</h3>
 <p>Saving a share card writes that image to your photo library. SpinTracker requests add-only access, which means it can add images but cannot read your existing photos.</p>
-
+<h3>Feedback you send us — only when you send it</h3>
+<p><strong>Send Feedback</strong>, in Settings (and asked once on the Home screen, until you open or dismiss it), opens an email to us that you write and send from your own mail account. Below your message it adds a short usage summary, in plain view, which you can edit or delete before sending.</p>
+<p>The summary is counts, not content: your app version, iOS version and iPhone model; whether you subscribe, or how many of your free rides you have used; how many rides you have recorded and how long ago your first one was, in days; how many had heart rate (and how many of those came from Apple Health), power, identified songs, or an instructor or studio tag, and how many songs a ride usually has; how many playlists you made; whether Apple Health workout sync is on; how many of SpinTracker's crash and hang reports are stored on your phone; and how many times you shared a ride or a recap, from where in the app and roughly where to (such as Instagram or Messages).</p>
+<p>It never includes song titles, artists, names, dates, locations, heart rate or power figures, or any identifier. Nothing is sent unless you send the email yourself. We receive it like any other email, including your email address, and only what you choose to send.</p>
 <h2>Permissions, and what each is for</h2>
 <div class="table-wrap">
 <table>
@@ -78,13 +79,12 @@
 <tr><td>Bluetooth</td><td>Connect heart rate, cadence, and power sensors</td><td>No sensor data</td></tr>
 <tr><td>Apple Health</td><td>Read physiology for zones; save workouts</td><td>Enter physiology manually; no Health sync</td></tr>
 <tr><td>Location (when in use)</td><td>Suggest nearby studios; tag where you rode</td><td>Tag studios manually</td></tr>
-<tr><td>Camera</td><td>Take a selfie for a share card</td><td>Choose an existing photo instead</td></tr>
 <tr><td>Photos (add only)</td><td>Save a share card to your library</td><td>Use the share sheet instead</td></tr>
 </tbody>
 </table>
 </div>
 <p>Every one is optional. The app is designed to degrade gracefully rather than block you.</p>
-
+<p>A selfie for a share card is chosen with the system photo picker, which needs no permission: SpinTracker receives only the photo you pick, and never opens the camera.</p>
 <h2>What we do not do</h2>
 <ul>
 <li>No third-party analytics, advertising, or attribution SDKs. There are none in the app</li>
@@ -92,13 +92,10 @@
 <li>No selling, renting, or sharing your personal information</li>
 <li>No account required. There is no SpinTracker login, because there is no SpinTracker server</li>
 </ul>
-
 <h2>Storage and security</h2>
 <p>Workout data is stored using Apple's SwiftData, preferences in UserDefaults, and access tokens for connected services in the iOS Keychain. Device-level encryption protects all of it while your device is locked.</p>
-
 <h2>Subscriptions</h2>
 <p>SpinTracker offers an optional auto-renewing subscription, handled entirely by Apple through StoreKit. We never see or store your payment details. Purchases and renewals are managed in your Apple account settings.</p>
-
 <h2>Your choices</h2>
 <ul>
 <li><strong>See your data</strong> — it is all visible in the app</li>
@@ -107,14 +104,11 @@
 <li><strong>Disconnect a service</strong> — revoke it in Settings, which removes the stored token</li>
 <li><strong>Revoke a permission</strong> — iOS Settings, at any time</li>
 </ul>
-<p>Because your data lives on your device rather than on our servers, you do not need to ask us to retrieve or delete it.</p>
-
+<p>Because your data lives on your device rather than on our servers, you do not need to ask us to retrieve or delete it. The one exception is a feedback email you send us: it reaches our inbox like any other email, and if you want it deleted, contact us at the address below.</p>
 <h2>Children</h2>
 <p>SpinTracker is not directed at children under 13, and we do not knowingly collect information from them.</p>
-
 <h2>Changes to this policy</h2>
 <p>If this policy changes materially, the effective date above changes and the updated policy appears in the app. Continuing to use SpinTracker after an update means you accept the revised policy.</p>
-
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:zbproductions22@gmail.com">zbproductions22@gmail.com</a></p>
 
