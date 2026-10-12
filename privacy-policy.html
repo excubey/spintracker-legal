@@ -26,7 +26,7 @@
 </div>
 
 <h2>What stays on your device</h2>
-<p>All of this is stored locally and never leaves unless you export or share it:</p>
+<p>All of this is stored locally and never leaves unless you export or share it, or join a class (see Class link):</p>
 <ul>
 <li><strong>Workout records</strong> — duration, heart rate, cadence, power, and the second-by-second data points behind them</li>
 <li><strong>Your profile</strong> — name, weight, height, and optionally your Instagram handle, date of birth, resting heart rate, maximum heart rate, and FTP, except what you send when you join a class (your first name and handle). The physiology fields are optional and used only to calculate effort zones that are accurate for you rather than relative to your hardest recent ride</li>
@@ -64,8 +64,8 @@
 <p>If our server does not answer within a few seconds, the link carries the setlist itself, as before. The part of such a link carrying the setlist is never transmitted to the site that displays it, and the link cannot be recalled once shared. If the server stored a copy after SpinTracker stopped waiting, no link points to it and it is deleted when it expires. An exported TCX file always carries its link this way.</p>
 <h3>Class link — only when a class is started or joined</h3>
 <p>An instructor who taps <strong>Start Class</strong> makes their phone announce the class over Bluetooth, so riders' phones in the room can find it. Anyone nearby with a Bluetooth scanner can read what it announces: the class name, the studio and its Instagram handle, the instructor's name and Instagram handle, and when the class started. It stops when the instructor posts the class to Instagram Stories or closes it without riding, about half an hour after their ride ends, and in any case within two and a half hours.</p>
-<p>If you tap <strong>Join</strong>, your phone sends the instructor's phone your first name and, if you saved or typed one, your Instagram handle, so the instructor can count you and tag you in their Story. When your ride ends, it also sends how long you rode and when your songs changed, so the instructor's phone can tell you were in the same class. Nothing is sent unless you tap Join, and none of it ever reaches SpinTracker or any server: the phones talk to each other directly. Your ride keeps the class's name, studio and instructor so it can be tagged.</p>
-<p>On the instructor's phone, riders' names and handles are kept only with that class, are excluded from backups, and are deleted when the instructor posts the class's Story, which copies the Instagram handles of the riders they included to the clipboard and opens Instagram. If they never post, the names and handles stop being shown 24 hours after the class started, and are removed from the phone the next time SpinTracker opens. The instructor's ride keeps only how many riders were included.</p>
+<p>If you tap <strong>Join</strong>, your phone sends the instructor's phone your first name and, if you saved or typed one, your Instagram handle, so the instructor can count you and tag you in their Story. After your ride ends, it also sends how long you rode and when your songs changed, so the instructor's phone can tell you were in the same class. Nothing is sent unless you tap Join, and none of it ever reaches SpinTracker or any server: the phones talk to each other directly. Your ride keeps what the class announced, and when you confirm its tags it may add the instructor and studio to your saved ones.</p>
+<p>On the instructor's phone, riders' names, handles and ride reports (how long they rode, when their songs changed) are kept only with that class, are excluded from backups, and are deleted when the instructor posts the class's Story; opening Instagram Stories copies the handles of the included riders who sent one. If they never post, it all stops being shown 24 hours after the class started, and is removed from the phone the next time SpinTracker opens. Deleting your ride or the app does not reach what you already sent; it stays on the instructor's phone until then. The instructor's ride keeps only how many riders were included.</p>
 <p>These exchanges travel between the phones unencrypted, so someone nearby with the right equipment could read them as they pass.</p>
 <h3>Social platforms — only when you post</h3>
 <p>Posting a workout card sends that image and caption to the platform you selected. Nothing is posted without you initiating it.</p>
@@ -100,13 +100,14 @@
 <li>No account required. There is no SpinTracker login. Our server stores setlists you share, not people: it has no user accounts</li>
 </ul>
 <h2>Storage and security</h2>
-<p>Workout data is stored using Apple's SwiftData, preferences in UserDefaults, and access tokens for connected services in the iOS Keychain. Device-level encryption protects all of it while your device is locked, with one exception: an instructor's class roll (riders' first names and handles) is protected only until the device is first unlocked after it restarts, so the app can answer riders' phones while it sits locked on the podium. A setlist you share is stored on our server until it expires, within 30 days; the key that lets SpinTracker delete it early stays on your iPhone.</p>
+<p>Workout data is stored using Apple's SwiftData, preferences in UserDefaults, and access tokens for connected services in the iOS Keychain. Device-level encryption protects all of it while your device is locked, with one exception: an instructor's class roll (riders' first names, handles and ride reports) is protected only until the device is first unlocked after it restarts, so the app can answer riders' phones while it sits locked on the podium. A setlist you share is stored on our server until it expires, within 30 days; the key that lets SpinTracker delete it early stays on your iPhone.</p>
 <h2>Subscriptions</h2>
 <p>SpinTracker offers an optional auto-renewing subscription, handled entirely by Apple through StoreKit. We never see or store your payment details. Purchases and renewals are managed in your Apple account settings.</p>
 <h2>Your choices</h2>
 <ul>
 <li><strong>See your data</strong> — it is all visible in the app</li>
 <li><strong>Delete a ride</strong> — delete it from History, which also asks our server to delete that ride's shared setlists</li>
+<li><strong>Joined a class?</strong> What you sent the instructor's phone stays there until they post the class or, at most, until their app next opens 24 hours after it started</li>
 <li><strong>Delete everything</strong> — delete the app. A setlist you shared stays on our server until it expires, within 30 days of when it was uploaded</li>
 <li><strong>Remove a shared setlist sooner</strong> — including one that names you — use Report this setlist on its page, or email us its link</li>
 <li><strong>Disconnect a service</strong> — revoke it in Settings, which removes the stored token</li>
