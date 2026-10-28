@@ -11,27 +11,28 @@
 <main>
 
 <h1>SpinTracker Privacy Policy</h1>
-<p class="effective">Effective date: 12 October 2026</p>
+<p class="effective">Effective date: 27 October 2026</p>
 <div class="lede">
 <h2>The short version</h2>
 <p>SpinTracker records your ride on your device and keeps it there. Your workouts, music history, and profile are not uploaded to any server we operate. The one exception is a ride's setlist when you share it: our server keeps it so the link can be short, and deletes it when the link expires after 30 days. Your heart rate and other ride stats never go with it.</p>
-<p>Four things do leave your device, and you should know about each:</p>
+<p>Five things do leave your device, and you should know about each:</p>
 <ul>
 <li><strong>While a ride is recording, the app listens for music.</strong> It turns what it hears into an acoustic fingerprint and sends that to Apple's music recognition service to identify the song. No audio recording is ever saved or transmitted.</li>
 <li><strong>When the app shows a song, it loads the cover art from Apple.</strong> Like any image loaded from the internet, the request reveals to Apple which cover is being shown, and your device's IP address; it carries nothing else about your ride.</li>
 <li><strong>If you start a class or join one,</strong> your phone talks directly to other phones in the room over Bluetooth, never through us. "Class link" below says exactly what goes.</li>
+<li><strong>If you link with a partner for a duet,</strong> your phones swap your names and a summary of your rides directly over Bluetooth, sealed and never through us. If your phones miss each other, you can send your summary as a sealed link through an app you choose instead. "Duet ride" below says exactly what goes.</li>
 <li><strong>Anything you explicitly ask for</strong> — a playlist you create or check a class against, a card you post, a setlist you share, a file you export, a feedback email you send us — leaves only to do what you asked, and only when you ask it to.</li>
 </ul>
 <p>We do not track you, we do not use analytics or advertising SDKs, and we do not sell or rent your data to anyone.</p>
 </div>
 
 <h2>What stays on your device</h2>
-<p>All of this is stored locally and never leaves unless you export or share it, or start or join a class (see Class link):</p>
+<p>All of this is stored locally and never leaves unless you export or share it, or start or join a class (see Class link), or link with a partner (see Duet ride):</p>
 <ul>
 <li><strong>Workout records</strong> — duration, heart rate, cadence, power, and the second-by-second data points behind them</li>
-<li><strong>Your profile</strong> — name, weight, height, and optionally your Instagram handle, date of birth, resting heart rate, maximum heart rate, and FTP, except what you send when you join a class (your first name and handle). The physiology fields are optional and used only to calculate effort zones that are accurate for you rather than relative to your hardest recent ride</li>
+<li><strong>Your profile</strong> — name, weight, height, and optionally your Instagram handle, date of birth, resting heart rate, maximum heart rate, and FTP, except what you send when you join a class (your first name and handle) or what you send a partner you link with (your name, handle and rider look). The physiology fields are optional and used only to calculate effort zones that are accurate for you rather than relative to your hardest recent ride</li>
 <li><strong>Music history</strong> — the songs identified during your rides and the effort metrics associated with them</li>
-<li><strong>Studio and instructor tags</strong> you add to a ride, and the details of a class you joined (its name, studio and instructor)</li>
+<li><strong>Studio and instructor tags</strong> you add to a ride, and the details of a class you joined (its name, studio and instructor); a partner's name, handle, look and ride summary are removed 24 hours after the ride starts (see Duet ride)</li>
 <li><strong>The location where a ride started</strong>, if you granted location access — stored as coordinates on that session so your share cards can be tagged with the right studio</li>
 <li><strong>Selfies</strong> you attach to a ride, stored in the app's private storage</li>
 <li><strong>Paired Bluetooth sensors</strong> and your app preferences</li>
@@ -63,10 +64,16 @@
 <p>Anyone who has the link can open the setlist and read what it contains, in a browser or in the app, so share it only with people you intend to see it.</p>
 <p>If our server does not answer within a few seconds, the link carries the setlist itself, as before. The part of such a link carrying the setlist is never transmitted to the site that displays it, and the link cannot be recalled once shared. If the server stored a copy after SpinTracker stopped waiting, no link points to it and it is deleted when it expires. An exported TCX file always carries its link this way.</p>
 <h3>Class link — only when a class is started or joined</h3>
-<p>An instructor who taps <strong>Start Class</strong> makes their phone announce the class over Bluetooth, so riders' phones in the room can find it. Anyone nearby with a Bluetooth scanner can read what it announces: the class name, the studio and its Instagram handle, the instructor's name and Instagram handle, and when the class started. It stops when the instructor posts the class to Instagram Stories or closes it without riding, about half an hour after their ride ends, and in any case within two and a half hours.</p>
-<p>If you tap <strong>Join</strong>, your phone sends the instructor's phone your first name and, if you saved or typed one, your Instagram handle, so the instructor can count you and tag you in their Story. After your ride ends, it also sends how long you rode and when your songs changed, so the instructor's phone can tell you were in the same class. Nothing is sent unless you tap Join, and none of it reaches SpinTracker or our server: the phones talk to each other directly. Your handle reaches Instagram only if the instructor tags you in a Story they post. Your ride keeps what the class announced, and when you confirm its tags it may add the instructor and studio to your saved ones.</p>
-<p>On the instructor's phone, riders' names, handles and ride reports (how long they rode, when their songs changed), with when each rider joined and an identifier for their phone's Bluetooth connection, are kept only with that class, are excluded from backups, and are deleted when the instructor posts the class's Story; opening Instagram Stories copies the handles of the included riders who sent one. If they never post, it all stops being shown 24 hours after the class started, and is removed from the phone the next time SpinTracker opens. Deleting your ride or the app does not reach what you already sent; it stays on the instructor's phone until then. The instructor's ride keeps only how many riders were included.</p>
+<p>An instructor who taps <strong>Start Class</strong> makes their phone announce the class over Bluetooth, so riders' phones in the room can find it. Anyone nearby with a Bluetooth scanner can read what it announces: the class name, the studio and its Instagram handle, the instructor's name and Instagram handle, when the class started, and, once the instructor's ride ends, when it ended. It stops when the instructor posts the class to Instagram Stories, marks it posted, or closes it without riding, about half an hour after their ride ends, and in any case within two and a half hours.</p>
+<p>If you tap <strong>Join</strong>, your phone sends the instructor's phone your first name and, if you saved or typed one, your Instagram handle, so the instructor can count you and tag you in their Story. After your ride ends, it also sends how long you rode and when your songs changed, so the instructor's phone can tell you were in the same class. If you join from Home instead of the ride screen, nothing is sent after the join. Nothing is sent unless you tap Join, and none of it reaches SpinTracker or our server: the phones talk to each other directly. Your handle reaches Instagram only if the instructor tags you in a Story they post. Your ride keeps what the class announced, and when you confirm its tags it may add the instructor and studio to your saved ones.</p>
+<p>On the instructor's phone, riders' names, handles and ride reports (how long they rode, when their songs changed), with when each rider joined and an identifier for their phone's Bluetooth connection, are kept only with that class, are excluded from backups, and are deleted when the instructor posts the class's Story or marks it posted; opening Instagram Stories, or saving the class's post to Photos, copies the studio's handle, any co-instructors', and the handles of the included riders who sent one. If they never post, it all stops being shown 24 hours after the class started, and is removed from the phone the next time SpinTracker opens. Deleting your ride or the app does not reach what you already sent; it stays on the instructor's phone until then. The instructor's ride keeps only how many riders were included, and the headcount they enter.</p>
 <p>These exchanges travel between the phones unencrypted, so someone nearby with the right equipment could read them as they pass.</p>
+<h3>Duet ride — only when you link with a partner</h3>
+<p>Tap Start a duet and your phone announces the duet over Bluetooth, so a partner's phone nearby can find it. Anyone nearby with a Bluetooth scanner can read what that offer announces: your first name, how your rider looks, and whether your phone has a heart-rate or bike source yet. It carries no handle and no ride times.</p>
+<p>Nothing else is sent until you tap Link. When you do, your partner's phone receives your first name, your handle if you saved one, your rider look and, if your ride is over, its start and end times. If you are joining, they arrive while your partner decides, and your partner's phone holds them in memory only, dropping them when your partner taps Not now or after 75 seconds without an answer. Once you are both linked and your ride is over, your partner's phone also receives a summary of it: your effort relative to your own range, your ride times, the song titles, artists and artwork links from your ride, and whether you can unlock Pro films. If you started the duet, it also carries the class line and time zone. Your raw heart rate, power and cadence never go. Your partner's phone sends you the same.</p>
+<p>All of this is sealed, so someone nearby cannot read it as it passes. Over Bluetooth it goes from phone to phone, never through us and never through a server. The phones find each other again after the ride by advertising a Bluetooth service that carries no name, so it does not say whose phone it is.</p>
+<p>If the phones miss each other, you can send your ride summary to your partner as a link, in Messages or any app you choose. The summary is sealed inside the link, so only your partner's phone can open it. The part of the link that carries it is never sent to our website. The app you send it with carries the link as it carries any message, so it passes through that app's servers, sealed. The link does show, readably, the hour the duet expires. Opening the link in a browser, or a messaging app building its preview, asks our website for a plain page, without the sealed part; our website keeps no log of it. That request reaches our website through Cloudflare, which carries the connection and so handles your IP address; Cloudflare's own privacy policy governs that. A link opened more than 24 hours after the ride started (after you linked, if you never rode) is refused.</p>
+<p>Your partner's copy of your name, handle, look and summary is deleted 24 hours after the ride starts (24 hours after you linked, if you never ride) and is removed from their phone the next time SpinTracker opens, and so is yours of theirs. Deleting your ride or the app does not reach what you already sent, and a film your partner already saved or posted stays. Your partner may post the film with your ride in it: it shows your rider, your first name, your handle if you saved one, the ride date, the class line if the duet's starter sent one, your songs, your effort as a shape rather than numbers, and a note if your ride had no heart rate.</p>
 <h3>Social platforms — only when you post</h3>
 <p>Posting a workout card sends that image and caption to the platform you selected. Nothing is posted without you initiating it.</p>
 <h3>Photos — only when you save</h3>
@@ -83,7 +90,7 @@
 </thead>
 <tbody>
 <tr><td>Microphone</td><td>Identify songs during a ride</td><td>Rides still record; songs are not identified</td></tr>
-<tr><td>Bluetooth</td><td>Connect heart rate, cadence, and power sensors; find a class nearby to join, or announce a class you teach</td><td>No sensor data; no class link</td></tr>
+<tr><td>Bluetooth</td><td>Connect heart rate, cadence, and power sensors; find a class nearby to join, or announce a class you teach; link with a partner for a duet</td><td>No sensor data; no class link; no duet</td></tr>
 <tr><td>Apple Health</td><td>Read physiology for zones, heart rate a ride is missing, and your workouts; save workouts</td><td>Enter physiology manually; no Health sync</td></tr>
 <tr><td>Location (when in use)</td><td>Suggest nearby studios; tag where you rode</td><td>Tag studios manually</td></tr>
 <tr><td>Photos (add only)</td><td>Save a share card to your library</td><td>Use the share sheet instead</td></tr>
@@ -96,11 +103,11 @@
 <ul>
 <li>No third-party analytics, advertising, or attribution SDKs. There are none in the app</li>
 <li>No cross-app or cross-site tracking. The app's privacy manifest declares no tracking and no tracking domains</li>
-<li>No selling, renting, or sharing your personal information. When you join a class, you send your first name and handle to the instructor yourself; none of it comes to us</li>
+<li>No selling, renting, or sharing your personal information. When you join a class, you send your first name and handle to the instructor yourself; when you link a duet, you send them to your partner. None of it comes to us</li>
 <li>No account required. There is no SpinTracker login. Our server stores setlists you share, not people: it has no user accounts</li>
 </ul>
 <h2>Storage and security</h2>
-<p>Workout data is stored using Apple's SwiftData, preferences in UserDefaults, and access tokens for connected services in the iOS Keychain. iOS encrypts all of it and keeps it locked away until you first unlock your device after it restarts. From then on it stays readable while the device is locked, so a ride keeps recording in your pocket, and an instructor's phone can answer riders' phones while it sits locked on the podium. A setlist you share is stored on our server until it expires, within 30 days; the key that lets SpinTracker delete it early stays on your iPhone.</p>
+<p>Workout data is stored using Apple's SwiftData, preferences in UserDefaults, and access tokens for connected services in the iOS Keychain. iOS encrypts all of it and keeps it locked away until you first unlock your device after it restarts. From then on it stays readable while the device is locked, so a ride keeps recording in your pocket, and an instructor's phone can answer riders' phones while it sits locked on the podium, and a duet's phones can swap their summaries while locked. A setlist you share is stored on our server until it expires, within 30 days; the key that lets SpinTracker delete it early stays on your iPhone.</p>
 <h2>Subscriptions</h2>
 <p>SpinTracker offers an optional auto-renewing subscription, handled entirely by Apple through StoreKit. We never see or store your payment details. Purchases and renewals are managed in your Apple account settings.</p>
 <h2>Your choices</h2>
@@ -108,6 +115,7 @@
 <li><strong>See your data</strong> — it is all visible in the app</li>
 <li><strong>Delete a ride</strong> — delete it from History, which also asks our server to delete that ride's shared setlists</li>
 <li><strong>Joined a class?</strong> What you sent the instructor's phone stays there until they post the class or, at most, until their app next opens 24 hours after it started</li>
+<li><strong>Linked a duet?</strong> What you sent your partner's phone stays there until their app next opens 24 hours after the ride started (after you linked, if you never rode)</li>
 <li><strong>Delete everything</strong> — delete the app. A setlist you shared stays on our server until it expires, within 30 days of when it was uploaded</li>
 <li><strong>Remove a shared setlist sooner</strong> — including one that names you — use Report this setlist on its page, or email us its link</li>
 <li><strong>Disconnect a service</strong> — revoke it in Settings, which removes the stored token</li>
